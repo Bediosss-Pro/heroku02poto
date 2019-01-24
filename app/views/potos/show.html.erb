@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titre:</strong>
+  <%= @poto.titre %>
+</p>
+
+<p>
+  <strong>Contenu:</strong>
+  <%= @poto.contenu %>
+</p>
+
+<%= link_to 'Edit', edit_poto_path(@poto) %> |
+<%= link_to 'Back', potos_path %>

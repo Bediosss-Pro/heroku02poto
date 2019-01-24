@@ -1,0 +1,2 @@
+class Poto < ApplicationRecord
+end

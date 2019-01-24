@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Potos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Titre</th>
+      <th>Contenu</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @potos.each do |poto| %>
+      <tr>
+        <td><%= poto.titre %></td>
+        <td><%= poto.contenu %></td>
+        <td><%= link_to 'Show', poto %></td>
+        <td><%= link_to 'Edit', edit_poto_path(poto) %></td>
+        <td><%= link_to 'Destroy', poto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Poto', new_poto_path %>
