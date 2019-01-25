@@ -1,3 +1,4 @@
+
 <%= form_with(model: poto, local: true) do |form| %>
   <% if poto.errors.any? %>
     <div id="error_explanation">
@@ -22,6 +23,6 @@
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <div class="btn btn-info"><%= form.submit %></div>
   </div>
 <% end %>

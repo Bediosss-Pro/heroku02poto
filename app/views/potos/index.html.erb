@@ -16,9 +16,9 @@
       <tr>
         <td><%= poto.titre %></td>
         <td><%= poto.contenu %></td>
-        <td><%= link_to 'Show', poto %></td>
-        <td><%= link_to 'Edit', edit_poto_path(poto) %></td>
-        <td><%= link_to 'Destroy', poto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', poto, class: "btn btn-warning" %></td>
+        <td><%= link_to 'Edit', edit_poto_path(poto), class: 'btn btn-primary' %></td>
+        <td><%= link_to 'Destroy', poto, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Poto', new_poto_path %>
+<%= link_to 'New Poto', new_poto_path, class: "btn btn-success" %>
